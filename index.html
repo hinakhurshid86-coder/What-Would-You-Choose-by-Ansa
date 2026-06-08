@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Would You Rather by Ansa</title>
+  <meta name="description" content="Premium family-friendly Would You Rather game with neon glassmorphism styling. Choose a category, enter player names, and enjoy decision-driven questions." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Would You Rather by Ansa" />
+  <meta property="og:description" content="Play thoughtful Would You Rather questions in a premium neon-style experience for kids, teens, adults, and family groups." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.example.com/" />
+  <meta property="og:image" content="https://www.example.com/share-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.example.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo-bubble">
+          <div class="logo-mark">
+            <p class="logo-title">WOULD YOU<br>RATHER</p>
+            <p class="logo-tag">by Ansa</p>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow">Would You Rather</p>
+          <h1>by Ansa</h1>
+        </div>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" type="button">
+          <span class="sr-only">Open navigation menu</span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#landing">Home</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#setup">Start</a></li>
+        </ul>
+      </nav>
+      <button id="home-btn" class="ghost-button hidden" type="button">Home</button>
+    </header>
+
+    <main>
+      <section id="landing" class="page-panel">
+        <div class="hero-card">
+          <p class="eyebrow">Premium family-friendly play</p>
+          <h2>Choose a category and start a neon-ready question journey.</h2>
+          <p class="hero-copy">Fast loading. Simple setup. No sign-in, no rooms, no chat — just thoughtful questions perfect for kids, teens, adults, and families.</p>
+        </div>
+
+        <div class="category-grid">
+          <button type="button" class="category-card category-kids" data-category="kids">
+            <span class="category-emoji">👧</span>
+            <h3>Kids</h3>
+            <p>Safe, funny, imaginative choices for young players.</p>
+          </button>
+          <button type="button" class="category-card category-teens" data-category="teens">
+            <span class="category-emoji">🧑</span>
+            <h3>Teens</h3>
+            <p>Creative, social, and curious prompts for teens.</p>
+          </button>
+          <button type="button" class="category-card category-adults" data-category="adults">
+            <span class="category-emoji">👨</span>
+            <h3>Adults</h3>
+            <p>Thoughtful, fun, and polished questions for grown-ups.</p>
+          </button>
+          <button type="button" class="category-card category-family" data-category="family">
+            <span class="category-emoji">👨‍👩‍👧‍👦</span>
+            <h3>Family</h3>
+            <p>Questions designed for every age to enjoy together.</p>
+          </button>
+        </div>
+
+        <section class="page-panel hardest-section">
+          <div class="panel-card">
+            <div class="section-head">
+              <p class="eyebrow">Most Difficult Questions</p>
+              <h2>Only 10/10 dilemmas</h2>
+              <p class="section-copy">These hardest choices are designed to leave you truly torn. Tap any question to start it instantly.</p>
+            </div>
+            <div id="hardestQuestions" class="hardest-grid"></div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="page-panel testimonials-section">
+          <div class="testimonial-header">
+            <div>
+              <p class="eyebrow">Trusted by families</p>
+              <h2>Premium play that feels smooth and modern.</h2>
+              <p class="section-copy">Enjoy a lightning-fast game experience with thoughtful questions and polished presentation for every screen size.</p>
+            </div>
+            <div class="rating-panel">
+              <div class="rating-summary">
+                <div class="rating-stars" id="rating-stars" aria-label="Star rating"></div>
+                <div>
+                  <strong id="rating-text">4.9/5</strong>
+                  <p>based on player feedback</p>
+                </div>
+              </div>
+              <p class="rating-copy">Tap any star to leave a quick site rating after your session.</p>
+            </div>
+          </div>
+
+          <div class="review-grid">
+            <article class="testimonial-card">
+              <p>"The app feels premium and easy to use — perfect for our family game nights. The neon style is beautiful without feeling overwhelming."</p>
+              <strong>— Maya, mom of three</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>"I love how simple it is to pick a category and start playing. The design is crisp, and the questions are fun for teens too."</p>
+              <strong>— Jamal, high school student</strong>
+            </article>
+            <article class="testimonial-card">
+              <p>"A polished experience with great spacing and responsive flow. It works wonderfully on phones and tablets."</p>
+              <strong>— Priya, UX designer</strong>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section id="setup" class="page-panel hidden">
+        <div class="panel-card">
+          <div class="panel-header">
+            <button id="back-to-home" class="link-button" type="button">← Choose category</button>
+            <div>
+              <p class="eyebrow" id="setup-category-label"></p>
+              <h2>Player setup</h2>
+              <p class="section-copy">Enter the number of players and their names, then start the game instantly.</p>
+            </div>
+          </div>
+
+          <form id="player-form" class="player-form">
+            <label class="field-label">
+              Number of players
+              <select id="player-count" aria-label="Number of players"></select>
+            </label>
+            <div id="player-fields" class="player-fields"></div>
+            <div class="form-actions">
+              <button id="start-game" class="action-button" type="button">Start game</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="game" class="page-panel hidden">
+        <div class="panel-card game-card">
+          <div class="game-header">
+            <div>
+              <p class="eyebrow">Category: <span id="game-category"></span></p>
+              <h2 id="current-player"></h2>
+              <p id="progress-indicator" class="progress-copy"></p>
+            </div>
+            <div class="game-actions">
+              <button id="change-category" class="ghost-button" type="button">Change category</button>
+              <button id="restart-game" class="ghost-button" type="button">Restart game</button>
+            </div>
+          </div>
+
+          <div class="question-card">
+            <div class="question-meta">
+              <p class="question-label">Would you rather...</p>
+              <span class="difficulty-badge" id="difficultyBadge">Difficulty 8/10</span>
+            </div>
+            <h3 id="question-text"></h3>
+            <div id="answers-grid" class="answers-grid"></div>
+            <div id="resultPanel" class="result-panel hidden">
+              <h4>Other players chose</h4>
+              <div class="vote-results">
+                <div class="vote-row">
+                  <span id="optionOneLabel" class="vote-label"></span>
+                  <span id="optionOnePercent" class="vote-percent"></span>
+                </div>
+                <div class="progress-wrap"><div class="progress-fill" id="optionOneFill"></div></div>
+                <div class="vote-row">
+                  <span id="optionTwoLabel" class="vote-label"></span>
+                  <span id="optionTwoPercent" class="vote-percent"></span>
+                </div>
+                <div class="progress-wrap"><div class="progress-fill" id="optionTwoFill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-actions">
+            <button id="random-question" class="action-button secondary" type="button">Random question</button>
+            <button id="next-question" class="action-button" type="button">Next question</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="eyebrow">Ready for a brighter decision game?</p>
+        <p>Would You Rather by Ansa is built to feel premium, responsive, and family-friendly on every device.</p>
+      </div>
+      <p>© 2026 Would You Rather by Ansa. Designed for fast loading and easy play.</p>
+    </footer>
+  </div>
+
+  <div class="toast" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

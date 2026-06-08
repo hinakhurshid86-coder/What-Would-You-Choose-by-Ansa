@@ -1,0 +1,12 @@
+{
+  "name": "choice-clash",
+  "version": "1.0.0",
+  "description": "Would You Rather multiplayer game with real-time rooms and premium UI.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
